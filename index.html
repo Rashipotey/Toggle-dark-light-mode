@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toogle mode</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .div{
+            background-color: lightgreen;
+            color:black;
+            height: 40px;
+            width:100vw;
+        }
+        .btn{
+            background-color: lightgreen;
+            height:40px;
+            width:50px;
+            border-color: lightgreen;
+        }
+        span{
+            font-size: 20px;
+        }
+        .table{
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        .td{
+            border-style: solid;
+            padding:10px;
+            color:green;
+            font-size: 30px;
+        }
+        .dark-mode{
+            background-color: black;
+            .h1{
+                color: white;
+            }
+            .btn,.div{
+                color:white;
+                background-color: green;
+            }
+            .td{
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <button class="btn" onclick="toggle()"><span>☀</span></button>
+    </div>
+    <br>
+    <h1 class="h1">Toggle tutorial between light and dark mode.</h1>
+    <table class="table">
+        <tr>
+            <td class="td">This</td><td class="td">is</td><td class="td">a</td><td class="td">Table.</td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
